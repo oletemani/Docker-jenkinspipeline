@@ -1,9 +1,9 @@
 # prefix commands with sudo if user is not in docker group
 # build docker image
-docker build -t hands-on-jenkins/myapp .
+sudo docker build -t myapp .
 
 # check docker image
-docker images | grep hands-on-jenkins/myapp
+sudo docker images | grep myapp
 
 # run docker container
-docker run -p 8888:5000 --name myapp hands-on-jenkins/myapp 
+sudo docker run -p 8888:5000 --name myapp3 myapp 
